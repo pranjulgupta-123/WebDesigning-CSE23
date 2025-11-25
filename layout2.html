@@ -39,6 +39,8 @@
         #left{
             flex-grow: 2;
             background-color:white;
+            flex-direction: column;
+            gap: 10px;
         }
         #right{
             flex-grow: 1;
@@ -60,13 +62,23 @@
         }
         #lft_top{
             height:200px;
-            background-color: white;
-            flex
+            background-color:yellow;
+             flex-direction:column ;
+             gap:10px;
+            
         }
        #lft_btm{
             height:200px;
-            backgro
-            
+            background-color:yellow;
+            flex-direction-row;
+            gap: 10px;
+        }
+        #lft_top_top{
+            height: 20px;
+            background-color: palevioletred;
+        }
+        #lft_top_btm{
+            height: 170ox;
         }
     </style>
 </head>
@@ -82,14 +94,20 @@
 
         <section>
             <div id="left">
-                <div id="lft_top"></div>
-                <div id="lft_btm"></div>
+                <div id="lft_top">
+                <div id="lft_top_top"><h2>#pagetitle</h2></div>
+                <div id="lft_top_btm"><h2>#content1</h2></div>
+                </div>
+                <div id="lft_btm">
+                    <div id="lft_btm_left"><h2>#content2</h2></div>
+                    <div id="lft_btm_right"><h2>#content3</h2></div>
+                </div>
             </div>
             
 
             <div id="right">
-                <div id="rgt_top"><h2>Right Top</h2></div>
-                <div id="rgt_btm"><h2>Right Bottom</h2></div>
+                <div id="rgt_top"><h2>#nav local</h2></div>
+                <div id="rgt_btm"><h2>#sidebar</h2></div>
             </div>
         </section>
 
