@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+    <style>
+        body{
+             margin: 0;
+             padding: 0;
+        }
+        html,*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        main{
+            width: 1200px;
+            height: auto;
+            background-color: bisque;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        header,nav,footer{
+            height: 150px;
+            background-color:blue; text-align: center; line-height: 150px;
+        }
+        section{
+            height: 400px;
+            background-color: #CCC;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        #left{
+            flex-grow: 2;
+            background-color:white;
+        }
+        #right{
+            flex-grow: 1;
+            background-color:white;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        
+        }
+        #rgt_top{
+            height:200px ;
+            background-color: yellow;
+            
+        }
+        #rgt_btm{
+            height: 200px;
+            background-color: yellow;
+        
+        }
+        #lft_top{
+            height:200px;
+            background-color: white;
+            flex
+        }
+       #lft_btm{
+            height:200px;
+            backgro
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h2>Header</h2>
+        </header>
+
+        <nav>
+            <h3>Nav</h3>
+        </nav>
+
+        <section>
+            <div id="left">
+                <div id="lft_top"></div>
+                <div id="lft_btm"></div>
+            </div>
+            
+
+            <div id="right">
+                <div id="rgt_top"><h2>Right Top</h2></div>
+                <div id="rgt_btm"><h2>Right Bottom</h2></div>
+            </div>
+        </section>
+
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </main>
+    
+</body>
+</html>
