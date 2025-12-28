@@ -30,28 +30,51 @@
             width: 380px;
             height: 250px;
             margin: 10px;
-            background-color:aqua;
+            background-color:white;
             flex-direction: row;
             margin: 10px;
         }
         #left{
-            flex-grow: 2px;
-            
+            flex-grow: 2;
+            width: 240px;
+            flex-direction: column;
+            height: 250px;    
+            gap: 10px;
+        }
+        #right{
+            flex-grow: 1;
+            width: 110px;
+            height: 250px;
+        }
+        #lft_top{
+            height: 110px;
+            width: 110px;
         }
     </style>
 </head>
 <body>
     <div id="main">
         <header>
+            <h2>
+                header
+            </h2>
            
         </header>
         <nav>
+          <h2>nav</h2>  
 
         </nav>
 
 <div id="container">
-    <div id="left"></div>
-    <div id="right"></div>
+    <div id="left">
+        <div id="lft_top">
+            <h2>section</h2>
+        </div>
+        <div id="lft_bottom"></div>
+    </div>
+    <div id="right">
+        <h2>aside</h2>
+    </div>
 </div>
 <footer>
 
